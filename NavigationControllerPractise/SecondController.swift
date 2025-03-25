@@ -11,8 +11,8 @@ class SecondController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "Second Page"
+//        navigationItem.title = "Second Page"
     }
     
 

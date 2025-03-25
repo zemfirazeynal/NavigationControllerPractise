@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonTapped(_ sender: Any) {
+//        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: <#T##String#>)
+        let controller = storyboard?.instantiateViewController(withIdentifier: "SecondController")
+        navigationController?.show(controller!, sender: nil)
+//        navigationController?.present(controller!, animated: true)
+    }
+    
 }
 
